@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "ac281127-325e-414c-ac4a-b90bd531e37c",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43998555"
+	},
+	"item": [
+		{
+			"name": "JUGADOR",
+			"item": [
+				{
+					"name": "jugadores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"nombre\": \"Nicolás Correa\",\r\n    \"posicion\": \"Mediocampista\",\r\n    \"dorsal\": 16,\r\n    \"fechaNac\": \"1997-09-12\",\r\n    \"nacionalidad\": \"El Salvador\",\r\n    \"equipo\": { \"idEquipo\": 16 }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/jugadores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"jugadores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "jugadores",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PARTIDO",
+			"item": [
+				{
+					"name": "partido",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\": \"2024-05-15\",\r\n    \"estadio\": \"Anfield\",\r\n    \"equipoLocal\": { \"idEquipo\": 5 },\r\n    \"equipoVisita\": { \"idEquipo\": 6 },\r\n    \"golesLocal\": 3,\r\n    \"golesVisita\": 2\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/partidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"partidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "partido",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ENTRENADOR",
+			"item": [
+				{
+					"name": "entrenador",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"nombre\": \"Joaquín Morales\",\r\n    \"especialidad\": \"Táctica ofensiva\",\r\n    \"equipo\": { \"idEquipo\": 1 }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/entrenadores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"entrenadores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "entrenador",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EQUIPO",
+			"item": [
+				{
+					"name": "equipo",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "equipo",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ESTADISTICAS_JUGADOR",
+			"item": [
+				{
+					"name": "EstadisticasJugador",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "estadisticasjugador",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
